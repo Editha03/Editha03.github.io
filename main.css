@@ -1,0 +1,334 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
+
+
+
+/*------Start layout--------------*/
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #feffff;
+    
+}
+
+body {
+    width:100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    background:  #F5FBFC;
+    font-family: 'Arvo', serif;
+    text-align:justify;
+}
+
+
+
+
+header {
+    height: 200px;
+    background: url("../img/plato1.jpg");
+    
+    
+    
+}
+
+footer {
+    height: 50px;
+    background: #92bcb9;
+    
+}
+
+
+/*------Start navigation rules here-------- */
+
+nav{
+   
+    height: 70px;
+    background: #92bcb9;
+    
+    
+}
+
+ul{
+    list-style-type:none;
+    padding-top: 25px;
+}
+
+li{
+    display: inline;
+   margin-left: 100px;
+}
+
+
+a{
+    text-decoration: none;
+    padding: 12px;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+
+a:hover{
+    color: #93b6c9;
+    background: #fafafa;
+}
+
+
+
+/*---------layout for paragraphs, headers and img-------------------*/
+
+img {
+    margin-top: 50px;
+    border: 1px solid #354853;
+    border-radius: 20px 20px 10px 10px;
+    max-width: 100%;
+}
+
+/*#img1{
+     max-width: 100%;}*/
+
+
+p {
+    *margin: 0;
+    font-size: 16px;
+    color: #000;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-left: auto;
+   
+
+}
+    
+
+h2 {
+    font-size: 16px;
+    color:#464567;
+    padding: 20px;
+    text-align: center;
+}
+ 
+
+h3 {
+    font-size: 22px;
+    color:#565574;
+    padding: 20px;
+    text-align:center;
+    margin-top: 20px;
+    font-family: cursive;
+    }
+
+h4 {
+    font-size: 22px;
+    color:#565574;
+    padding: 20px;
+    text-align:center;
+    margin-top: 20px;
+    font-family: cursive;
+    }
+
+h1 {
+    font-size: 25px;
+    color:#40699a;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/*Start---grid layout-------------------------------------*/
+
+#mainContent{
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px auto;
+    width: 90%;
+    height: auto;
+}
+
+ /* ---START---Media queries for home and Explore pages----------------------*/ 
+
+@media only screen and (max-width: 600px) {
+    
+    #mainContent {
+        grid-template-columns: 1fr;
+         margin: 100px ;
+    width: 80%;
+    height: auto;
+    }
+    
+   img {
+    border: 1px solid #fff;
+    max-width: 75%;
+    border-radius: 20px 20px 0 0;
+    }
+    
+    #img1{
+       border: 1px solid #fff;
+    max-width: 75%;
+    border-radius: 20px 20px 0 0;
+    }
+    
+    p {
+   
+    font-size: 16px;
+    color: #000;
+    line-height: 40px;
+    margin-right: 70px;
+    
+    }   
+    
+    
+    h2{
+        margin-right: 100px;
+    }
+    
+    h1{
+        
+        margin-right: 60px;
+    }
+    
+ 
+    h3{
+       font-size: 20px;
+       font-family: cursive;
+       margin-top: 60px;
+       margin-left: 100px;
+        }
+    
+      h4{
+       font-size: 20px;
+       font-family: cursive;
+       margin-top: 60px;
+       text-align: center;
+        }
+   
+    header{
+    
+    background: url("../img/plato1.jpg");
+    height: 200px;
+    }
+    
+    li{
+    display:inherit;
+   
+    }
+    
+    nav{
+   
+    height: 90px;
+    background: #92bcb9;
+    
+    
+    }
+    
+    a:hover{
+    color: #0b0b0b;
+    background: none;
+    }
+}
+    
+
+    
+    
+/*   ------- Start grid layout styles for GALLERY PHOTO  page-------------- */
+
+#mainContent1{
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 25px auto;
+    width: 90%;
+    height: auto;
+}
+
+
+/* -------CSS media queries----------------- */
+
+
+@media(max-width:750px){
+    #mainContent1 {
+        
+    grid-template-columns: 1fr 1fr;
+    }
+    h3{
+        font-size: 20px;
+        font-family: cursive;
+        color: #41558b;
+        text-align: center;
+        
+    }
+    
+     p {
+    color: #2f2c2c;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 30px;
+    font-family: 'Monserrat';
+}
+
+  header{
+    
+    background: url("../img/plato1.jpg");
+    height: 200px;
+    }
+    
+    li{
+    display:inherit;
+   
+    }
+    
+    nav{
+   
+    height: 90px;
+    background: #92bcb9;
+    
+    
+    }
+    
+    a:hover{
+    color: #0b0b0b;
+    background: none;
+    }
+}
+       
+    
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    #mainContent1 {
+        grid-template-columns: 1fr;
+         margin: 100px ;
+    width: 80%;
+    height: auto;
+    }
+    
+   img {
+    border: 1px solid #fff;
+    max-width: 75%;
+    border-radius: 20px 20px 0 0;
+}
+        
+ h3{
+        font-size: 20px;
+        font-family: cursive;
+        color: #4d4d45;
+        max-width: 50%;
+        margin-left: 50px;
+        
+       
+    }
+    
+
+    
+    footer p {
+    color: #faebd7;
+    max-width: 100%;
+}
+}
+
